@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".FragmentNavegador" android:id="@+id/frameLayout3"
+                                             android:background="@android:color/background_light">
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textWebEditText"
+            android:ems="10"
+            android:id="@+id/eturl"
+            android:hint="Ingresa Url" android:textStyle="bold|italic"
+            android:textAllCaps="true" android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/btngo" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="21dp" android:layout_marginEnd="13dp"/>
+    <Button
+            android:text="GO!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btngo"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/eturl" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="9dp" app:layout_constraintBottom_toTopOf="@+id/wv1"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"/>
+    <WebView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/wv1"
+            app:layout_constraintTop_toBottomOf="@+id/btngo"/>
+</android.support.constraint.ConstraintLayout>
